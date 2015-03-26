@@ -1,0 +1,62 @@
+html {
+  background-color: #7CC9E8;
+}
+
+h1, h2, h3, h4, li, p {
+  font-family: courier;;
+}
+
+h1 {
+  font-size: 22px;
+
+}
+
+h2  {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 5px;
+}
+
+h4 {
+  font-size: 12px;
+  font-style: italic;
+}
+
+p {
+  font-size: 14px;
+}
+
+
+
+.sidebar {
+  background-color: #A545A8;
+  float: left;
+  height: 1000px;
+  margin-right: 100px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 35px;
+  opacity: .65;
+
+
+}
+
+ul {
+  list-style-type:  none;
+
+}
+
+li {
+
+  line-height: 25px;
+
+}
+
+main {
+  margin-top: 10px;
+  width: 45%;
+  margin-left: 200px;
+}
