@@ -29,11 +29,15 @@ p {
   font-size: 14px;
 }
 
+a {
+  color: rgb(231, 208, 208);
+  text-decoration: none;
+}
 
 .sidebar {
   background: linear-gradient(#1177A0, #147399, #1E5D76);
-  float: left;
-  height: 600px;
+  position: absolute;
+  height: 75%;
   margin-right: 100px;
   padding-left: 10px;
   padding-right: 10px;
@@ -47,6 +51,10 @@ p {
 
 .sidebar a {
   color: rgba(219, 219, 223, 0.81);
+}
+
+.sidebar li {
+    margin-left: -40px;
 }
 
 .index_main {
@@ -72,4 +80,5 @@ main {
   margin-top: 10px;
   width: 55%;
   margin-left: 100px;
+  position: fixed;
 }
