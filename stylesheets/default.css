@@ -1,5 +1,6 @@
 html {
-  background-color: #7CC9E8;
+  /*background-color: #7CC9E8;*/
+  background: linear-gradient(to right, #7CC9E8, rgb(193, 220, 232),#1A6581);
 }
 
 h1, h2, h3, h4, li, p {
@@ -30,7 +31,7 @@ p {
 }
 
 a {
-  color: rgb(231, 208, 208);
+  color: rgba(219, 219, 223, 0.81);
   text-decoration: none;
 }
 
@@ -44,15 +45,13 @@ a {
   padding-top: 35px;
   opacity: .8;
   margin-left: 15px;
+  box-shadow: 2px 2px 2px rgba(124, 16, 16, 0.52);
 }
 
 .sidebar h2 {
   color: rgba(15, 10, 11, 0.4);
 }
 
-.sidebar a {
-  color: rgba(219, 219, 223, 0.81);
-}
 
 .sidebar li {
     margin-left: -40px;
@@ -85,5 +84,17 @@ main {
 }
 
 #dragonfly {
-  margin-top: -75px;
+  margin-top: -40px;
+  margin-bottom: -20px;
+  margin-left: 12px;
+  width: 100px;
+  height: auto;
+
+}
+
+/* want to actually fix these images and not just resize them */
+img.icon {
+  width: 24px;
+  height: auto;
+  margin-top: 10px;
 }

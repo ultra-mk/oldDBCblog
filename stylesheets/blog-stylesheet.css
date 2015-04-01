@@ -12,6 +12,7 @@
   padding-top: 35px;
   opacity: .8;
   margin-left: 8px;
+  box-shadow: 2px 2px 2px rgba(124, 16, 16, 0.52);
 
 }
 .blog_sidebar h2 {
@@ -22,4 +23,8 @@
     margin-left: -40px;
     line-height: 30px;
     font-size: 15px;
+}
+
+a.article {
+  color: rgba(0, 9, 179, 0.68);
 }
