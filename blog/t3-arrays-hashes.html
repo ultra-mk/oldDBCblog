@@ -37,17 +37,21 @@ So, yeah - this is not intended to be a discussion about python-pandas, but that
     </p>
     <p>Data has to be contained by something. On it's own it's practically worthless - let me give you an example
 
-<p>green, Iron Man, blue, The Hulk, Chevy Corvette, Arsenal, Walking, Manchester City.</p>
+<pre>green, Iron Man, blue, The Hulk, Chevy Corvette, Arsenal, Walking, Manchester City.</pre>
 <p>
 What does that dataset mean? Without context, it's merely a string of letters. They must be contained within something that gives them meaning. An array is the simplest kind of container. It contains a list of stuff (ok, fine "objects"). Let's look at our dataset as arrays
 
     </p>
-    <p>colors = ['green','blue']
-super_heroes = ['Iron Man', 'The Hulk']
-mode_of_transport = ['Chevy Corvette', 'Walking']
-soccer_teams = ['Arsenal', 'Manchester City']
+    <p>
+    <pre>
+  colors = ['green','blue']
 
+  super_heroes = ['Iron Man', 'The Hulk']
 
+  mode_of_transport = ['Chevy Corvette', 'Walking']
+
+  soccer_teams = ['Arsenal', 'Manchester City']
+    </pre>
     </p>
     <p>Isn't that better? The data starts to mean something. We have a list of stuff that all goes together.
 
@@ -55,30 +59,38 @@ But there is another aspect of arrays - an array is ordered, meaning the stuff i
 
  </p>
  <p>
-Alphabetical
-soccer_teams_alphabetical = ['Arsenal', 'Chelsea','Liverpool', 'Manchester City', 'Manchester United']
+ <pre>
 
-Current Standing in the League Table
-soccer_teams_standing = ['Chelsea', 'Manchester City', 'Arsenal', 'Manchester United', 'Liverpool']
+  alphabetical = ['Arsenal', 'Chelsea','Liverpool', 'Manchester City','Manchester United']
 
-Oldest to Newest
-soccer_teams_founding = ['Manchester United', 'Manchester City', 'Arsenal', 'Liverpool', 'Chelsea']
+  current_rank = ['Chelsea', 'Manchester City', 'Arsenal', 'Manchester United', 'Liverpool']
+
+  old_to_new = ['Manchester United', 'Manchester City', 'Arsenal', 'Liverpool', 'Chelsea']
+
+  </pre>
+</p>
+<p>
 The order of the array is important - it conveys information about the data contained within it.
 
  </p>
  <p>
 The other workhorse data structure in Ruby is the hash. A hash also contains data, but it contains it in pairs rather than single values (I know that arrays can be multi-dimensional, but for simplicity's sake....). I'm going to re-arrange our first dataset into two hashes. One for Iron Man, and one for The Hulk.
-
+</p>
+<p class='code'>
+<pre>
 iron_man = {'name' =>'Iron Man',
                    'eye_color' =>'blue',
                    'mode_of_transport' => 'Chevy Corvette',
                    'favorite_soccer_team'=> 'Manchester City'}
-
+</pre>
+</p>
+<pre>
 hulk = {'name' => 'The Hulk',
            'eye_color' => 'green',
            'mode_of_transport' => 'Walking',
            'favorite_soccer_team' => 'Arsenal'}
-
+</pre>
+<p>
 The data is stored in a key-value pairs. We could look up the eye color for Hulk and it would come back green. In that case, 'eye_color' is the key and 'green' is the value. Whereas an array draws context from the entire array, a hash draws context from the key in the key-value pair. Both are important and both are necessary.
 
 </p>

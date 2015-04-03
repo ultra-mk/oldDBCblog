@@ -78,9 +78,9 @@ li {
 
 main {
   margin-top: 10px;
-  width: 55%;
+  width: 60%;
   margin-left: 100px;
-  position: fixed;
+  position: absolute;
 }
 
 #dragonfly {
