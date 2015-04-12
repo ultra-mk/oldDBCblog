@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+  <title>Thoughts of Michael K.</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="shortcut icon" href="../imgs/star.png"
+
+
+
+
+</head>
+<div class="blog_sidebar">
+  <h2>My Posts</h2>
+    <ul>
+      <li><a href="t4-enumerable-methods.html">.maps and atlases</a></li>
+      <li><a href="c3_thinking-style.html">paying the dues</a></li>
+      <li><a href="t3-arrays-hashes.html">a ray of light</a></li>
+      <li><a href="zig_zag.html">zig zagging toward the light</a></li>
+      <li><a href="c1-chefs-kitchen.html">body-mind</a></li>
+      <li><a href="t1-git-blog.html">ch-ch-ch-changes</a></li>
+      <li><a href="../index.html">main</a></li>
+    </ul>
+
+</div>
+
+<main id='blog_post'>
+  <h1>Map Ref. 41°N 93°W</h1>
+  <h3>A way of getting from here to there.</h2>
+  <h4>April 11, 2015</h4>
+
+  <section>
+<p>
+The map and the each method are closely related. On first glance they look almost identical.
+</p>
+
+<pre>
+my_array = [1,2,3]
+
+my_array.each {|num| print num + 1 }
+    234=> [1,2,3]
+
+my_array.map {|num| num + 1 }
+    #=> [2,3,4]
+</pre>
+<p>
+The crucial difference is that map returns a new object. Each simply executes the code block, displays the results and leaves the original array intact. The .each method technically returns the original array back to the caller.
+
+The best explanation I stumbled across is each is used when you want to do something to an array - map is when you want to do something to the array and use the results. I like to think of it as such - a map will take you from one place to another, but regardless of where you are, both places exist.
+</p>
+<p>
+An example:
+</p>
+
+<pre>
+super_heroes = ['Hulk', 'Iron Man', 'Black Widow']
+
+super_heroes.map {|hero| hero + ' is awesome!'}
+     #=> ['Hulk is awesome!','Iron man is awesome!','Black Widow is awesome!']
+
+</pre>
+
+<p>
+My array is simply a list of super heroes. Then I run the map method and map those values to three sentences. This is where map makes the most sense - in this example it treats the array of super heroes and the array of sentences as two different objects. Grammatically speaking, one array is a list of nouns and the other is a list of sentences. Map also provides a destructive version to permanently modify the original array.
+</p>
+
+  </section>
+</main>
+</html>
+

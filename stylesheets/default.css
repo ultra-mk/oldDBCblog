@@ -1,6 +1,6 @@
 html {
   /*background-color: #7CC9E8;*/
-  background: linear-gradient(to right, #7CC9E8, rgb(193, 220, 232),#1A6581);
+  background: linear-gradient(to right, #7CC9E8, rgb(193, 220, 232),#5CAECD);
 }
 
 h1, h2, h3, h4, li, p {
@@ -35,10 +35,11 @@ a {
   text-decoration: none;
 }
 
-.sidebar {
+#sidebar {
   background: linear-gradient(#1177A0, #147399, #1E5D76);
   position: absolute;
-  height: 75%;
+  width: 15%;
+  height: 500px;
   margin-right: 100px;
   padding-left: 10px;
   padding-right: 10px;
@@ -48,12 +49,13 @@ a {
   box-shadow: 2px 2px 2px rgba(124, 16, 16, 0.52);
 }
 
-.sidebar h2 {
+
+#sidebar h2 {
   color: rgba(15, 10, 11, 0.4);
 }
 
 
-.sidebar li {
+#sidebar li {
     margin-left: -40px;
 }
 
