@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <title>Thoughts of Michael K.</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="shortcut icon" href="../imgs/star.png"
+
+
+
+
+</head>
+<div class="blog_sidebar">
+  <h2>My Posts</h2>
+    <ul>
+      <li><a href="c5-feedback.html">pairing</a></li>
+      <li><a href="t5-ruby-classes.html">so say we all</a></li>
+      <li><a href="t4-enumerable-methods.html">.maps and atlases</a></li>
+      <li><a href="c3_thinking-style.html">paying the dues</a></li>
+      <li><a href="t3-arrays-hashes.html">a ray of light</a></li>
+      <li><a href="zig_zag.html">zig zagging toward the light</a></li>
+      <li><a href="c1-chefs-kitchen.html">body-mind</a></li>
+      <li><a href="t1-git-blog.html">ch-ch-ch-changes</a></li>
+      <li><a href="../index.html">main</a></li>
+    </ul>
+
+</div>
+
+<main id='blog_post'>
+  <h1>So Say We All</h1>
+  <h3>A person and a spaceship are actually quite different</h2>
+  <h4>April 18, 2015</h4>
+
+  <section>
+<p>
+This week has been spent crushing through Ruby classes and the beginnings of object-oriented programming.  Classes are similar things that do similar stuff. They have attributes that are similar and they take similar actions. For example, a human being has more in common with a cheetah than it does, say, a radish. Human beings and cheetahs both move around on things called legs. Radishes are known to be rather stationary. However, one might take a further step back and say that human, cheetahs and radishes are all living things, and have more in common with each other than they do with say...a drill press. Where to draw lines and how to create classes seems to me to be one of the most fundamental skills in Ruby. </p>
+
+<p>
+An example of how we might organize our objects based on the Battlestar Galatica universe. If you haven't watched Battlestar Galatica, what's wrong with you? Quit your job and go watch it. There's a very<a href="https://www.youtube.com/watch?v=yYjLrJRuMnY"> funny sketch</a> in Portlandia that documents how Battlestar Galactica can ruin one's life.  </p>
+
+<p> So. Are we all back? I know the last episode was a little off, but wasn't the rest of it awesome??! </p>
+
+<p> Some things (dare I say 'objects'?) in the universe of Battlestar Galatica. I will create an array with these items. </p>
+
+<pre>
+
+battlestar_stuff = ['Galatica', 'Viper','William Adama','Kara Thrace','Pegasus','Galen Tyrol']
+
+</pre>
+
+<p>
+I might decide to create a class that contains all of these things, but it's a little difficult to decide how to do it. William Adama, Kara Thrace and Galen Tyrol are all people. Galactic and Pegasus are specific ships and the Viper is a type of ship. It doesn't make sense to lump them all together because they are too different. Suppose we decide to add a deceased character to our list. We might need to add an attribute that indicates if the person is alive or dead. But ships can't really be alive or dead. They might be in-service or retired, but that's not exactly the same thing. What if we add "age" as an attribute? If we compare age of a person to age of a ship, that might not make sense. A person needs to be 18 years old to enter the military, but ships don't have to wait 18 years after completion before they enter service. Even though "age" seems to mean the same thing, it really doesn't.
+</p>
+
+<p>
+So here's a crack at trying to solve that.
+
+<pre>
+
+def people (name, rank)
+     @name = name
+     @rank    = rank
+ end
+
+def ships (ship_name , type)
+          @ship_name = name
+          @type = type
+end
+
+</pre>
+
+<p>This makes more sense in that all people will belong to the people class and all ships will belong to the ships class. We can add attributes to each class and they don’t have to interfere with each other. An example of this would be speed - a human’s top speed is much different than a ship that can travel faster than the speed of light. How would you even begin to compare those things? I know I don’t have the math to do it. But if we segregate speed within the classes, we can compare the speed of the ships to each other without have to do all kinds of mathematical contortions.</p>
+
+<p>I want to expand on this idea more, but to be perfectly honest, my understanding is still in a dim primordial stage. But I do know that splitting up your classes is really important. So say we all. </p>
+
+
+
+  </section>
+</main>
+</html>
+
