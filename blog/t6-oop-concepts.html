@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+  <title>Thoughts of Michael K.</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="shortcut icon" href="../imgs/star.png"
+
+
+
+
+</head>
+<div class="blog_sidebar">
+  <h2>My Posts</h2>
+    <ul>
+      <li><a href="c6-stereotype-threat.html">stereotype threat</a></li>
+      <li><a href="t6-oop-concepts.html">functional vs oop</a></li>
+      <li><a href="t6-oop-concepts.html">functional vs oop</a></li>
+      <li><a href="c5-feedback.html">pairing</a></li>
+      <li><a href="t5-ruby-classes.html">so say we all</a></li>
+      <li><a href="t4-enumerable-methods.html">.maps and atlases</a></li>
+      <li><a href="c3_thinking-style.html">paying the dues</a></li>
+      <li><a href="t3-arrays-hashes.html">a ray of light</a></li>
+      <li><a href="zig_zag.html">zig zagging toward the light</a></li>
+      <li><a href="c1-chefs-kitchen.html">body-mind</a></li>
+      <li><a href="t1-git-blog.html">ch-ch-ch-changes</a></li>
+      <li><a href="../index.html">main</a></li>
+    </ul>
+
+</div>
+
+<main id='blog_post'>
+  <h1>I Am Going To Make It Through This Post If It Kills Me </h1>
+  <h3></h3>
+  <h4>April 26, 2015</h4>
+
+  <section>
+<p>
+After a couple weeks of phoning it in, I'm re-dedicating myself to blogging. Working hard to get excited and stay excited. Fortunately, this week's topic is making that easy. It's a brief discussion of the differences between functional and object-oriented programming. I can only claim the dimmest of dim understanding of object oriented programming and my knowledge of functional programing  is even dimmer. But we shall sally forth bravely. </p>
+
+<p> Saturday night I saw The Mountain Goats at The Vic in Chicago. The Mountain Goats are awesome. Their most recent album is all about pro wrestling. I don't know anything about pro wrestling, but it's a really good album. It was a great show and it got me thinking about how programming models the world. Let's imagine The Vic theater is a computer program. How we model things might help explain the difference between functional and object oriented programming.</p>
+
+<p> I am going to create a Band class in Ruby. After all, we need a band to play our concert. There are different bands every night, but there are some similarities. Even if the styles of music are different, bands are usually comprised of people. So we'll create a style variable and a members variable. And since bands play music, it makes sense to have make_music method (the implementation looks a little strange because I'm not really sure how to model actual music in this example.) </p>
+
+<pre>
+
+class Band
+
+     def initialize(members, style, instruments)
+          @members = members
+          @style = style
+          @instruments = instruments
+     end
+
+     def make_music
+          @make_music = (@members * @instruments) + @style
+     end
+
+
+end
+
+</pre>
+
+<p> Now I think this is a useful way to think about a band. There are similarities, but you will get wildly different results. If I created an instance of Band called "Slayer" and an instance called "The Beatles", the output of their respective make_music methods are very different. This is a good example of an object. We are concerned with the methods within the object, but we know that our output will be very different. If we need to create a new band - it's really simple. We know they will have members, instruments and a style. Mash those things together and we get music. </p>
+
+<p> Now consider another part of our rock and roll club; the microphone. It might be tempting to create a class of microphones and describe what goes on inside the microphone, but that's not really going to be useful. A simplified signal chain might look like this.</p>
+
+<p> microphone --> mixing board --> power amplifier --> speakers</p>
+
+<p> Each step of this chain could be viewed as a function. The microphone accepts sound and turns it into an electrical signal. The mixing board sets the level of that signal relative to other signals. The power amp makes the signal more powerful and the speakers turn the electrical signal back into audible sound. The important difference to note here is that we as rock club patrons want the exact same output every time. The input is a human voice and the output is a signal loud enough to hear, but not too loud that it causes physical pain (depending on the show in question). We have a procedure to follow that must be followed every time. In object-oriented programming, we can take an object and re-purpose parts of it or all of it. We might take the @members variable and use that elsewhere in our program, like say if we have a sign_contract_with_band method. We wouldn't want anyone to use or modify our microphone function. We could end up with ruined equipment and unhappy (and deaf) patrons.</p>
+
+<p>To me, it breaks down like so - in an object-oriented world we are concerned with adding more objects i.e. bands. In a functional world we are concerned with adding functions i.e. we might want to add a reverb effect to the singer. Objects add objects and functions add functions.</p>
+
+<p>And do check out The Mountain Goats. Especially "The Legend of Chavo Guerrero".</p>
+
+
+  </section>
+</main>
+</html>
+
