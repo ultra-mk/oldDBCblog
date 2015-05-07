@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="cheat-sheet.css">
+</head>
+
+<body>
+    <h1>Git Hub Cheat Sheet </h1>
+    <div id='left'>
+        <div class='box'>
+            <h2>What is Git?</h2>
+            <p>Open source version control</p>
+            <p>Tracks changes that are made to a file</p>
+            <p>Allows multiple people to work on a single file</p>
+        </div>
+        <div class='box'>
+            <h2>Key commands:</h2>
+            <p>> git init == creates a repository</p>
+            <p>> git status == tells you what has been added or tracked</p>
+            <p>> git diff == tesll about the changes to the repository</p>
+            <p>> git log == history of changes</p>
+        </div>
+        <div class='box'>
+            <h2>What is a Branch?</h2>
+            <p>Branching allows multiple possible pathways that you may choose </p>
+            <p>Acts as a multiverse </p>
+            <p>> git checkout &ltBRANCH&gt == creates a branch or switches to it </p>
+            <p>> git checkout -b &ltBRANCH&gt == creates a branch and switches to it </p>
+        </div>
+        <div class='box'>
+            <h2>Forking and Cloning</h2>
+            <p>On the repo to be copied, click on the fork button and choose</p>
+            <p>On your forked repository copy the clone URL</p>
+            <p>in the command line type:</p>
+            <p>> git clone URL </p>
+        </div>
+        <div class='box'>
+            <h2>Adding</h2>
+            <p>stages files to be tracked by GIT</p>
+            <p>> git add --all</p>
+            <p>or </p>
+            <p>git add</p>
+        </div>
+        <div class='box'>
+            <h2>Commiting</h2>
+            <p>Acts as a checkpoint to return to at any point</p>
+            <p>> git commit -m "message" == commit the changes</p>
+            <p>> git commit -v == commit changes with commit message in the file </p>
+        </div>
+    </div>
+    <div id='right'>
+        <div class='box'>
+            <h2>Tracking Changes</h2>
+            <p>add the the files to track the changes</p>
+            <p>> git add</p>
+            <p>to remove trackers:</p>
+            <p>> git reset HEAD &ltfile&gt </p>
+            <p></p>
+        </div>
+        <div class='box'>
+            <h2>Making Changes</h2>
+            <p>Any changes you make will be tracked once added</p>
+            <p>> git status -v == shows the specific changes to be made</p>
+        </div>
+        <div class='box'>
+            <h2>Pushing Changes</h2>
+            <p>updates the master branch with commited changes</p>
+            <p>> git push origin master</p>
+        </div>
+        <div class='box'>
+            <h2>Adding remotes      </h2>
+            <p>Sets up remote to pull from</p>
+            <p>> git remote add upstream &ltFORKED REPO URL&gt</p>
+            <p>> git remote -v == to see your remotes </p>
+        </div>
+        <div class='box'>
+            <h2>Fetching changes</h2>
+            <p>gets changes made to the master branch</p>
+            <p>> git fetch upstream &ltBRANCH&gt</p>
+            <p>> git fetch upstream == fetches all the branches</p>
+            <p>Merging:</p>
+            <p>takes changes made by 2+ people and combines them</p>
+            <p>> git merge upstream &ltBRANCH&gt</p>
+        </div>
+        <div class='box'>
+            <h2>Git pull</h2>
+            <p>combines both fetching changes and merging them</p>
+            <p>> git pull upstream origin</p>
+            <p>git pull</p>
+        </div>
+</body>
+
+</html>
