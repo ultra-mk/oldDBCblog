@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>Thoughts of Michael K.</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="shortcut icon" href="../imgs/star.png"
+
+
+
+
+</head>
+<div class="blog_sidebar">
+  <h2>My Posts</h2>
+    <ul>
+       <li><a href="c8-conflict.html">conflict</a></li>
+      <li><a href="t8-tech.html">nosql</a></li>
+      <li><a href="t8-tech.html">nosql</a></li>
+      <li><a href="c7-values.html">values</a></li>
+      <li><a href="7-JavaScript.html">objects</a></li>
+      <li><a href="t6-oop-concepts.html">functional vs oop</a></li>
+      <li><a href="c5-feedback.html">pairing</a></li>
+      <li><a href="t5-ruby-classes.html">so say we all</a></li>
+      <li><a href="t4-enumerable-methods.html">.maps and atlases</a></li>
+      <li><a href="c3_thinking-style.html">paying the dues</a></li>
+      <li><a href="t3-arrays-hashes.html">a ray of light</a></li>
+      <li><a href="zig_zag.html">zig zagging toward the light</a></li>
+      <li><a href="c1-chefs-kitchen.html">body-mind</a></li>
+      <li><a href="t1-git-blog.html">ch-ch-ch-changes</a></li>
+      <li><a href="../index.html">main</a></li>
+    </ul>
+
+</div>
+
+<main id='blog_post'>
+  <h1>No Alarms, No Surprises, NoSQL</h1>
+  <h3></h3>
+  <h4>May 8, 2015</h4>
+
+  <section>
+  <p>As I've mentioned several times. I love data and databases. SQL was the first language (so to speak) that I had any interest in. The relational database has always been a source of joy to me. Yes, joy. Something about it just tickles my brain. A well-designed schema just looks...perfect to me. (Did I mention the data nerd bit?)</p>
+  <p>With this background, I have viewed NoSQL databases with a sneer. They offend my desire for consistency. How can you just shove a bunch of stuff onto a hard drive and call it a "database"? And there's the hipster part of me that thinks "SQL was good enough in the 70's --> it's good enough now". So that's why I thought I would research them. Maybe to disavow my misconceptions, or maybe to prove that old ways are the best ways.</p>
+  <p>The first misconception that I had comes from the name - "NoSQL". It turns out that really isn't that accurate of a name. Some databases have SQL-type query languages. It's really more like a "No Relation" database. A typical relational database stores data in tables. One table for customer records, one table from supplier records, a table for products ect. These different tables are then joined together in a variety of ways. Joining an order table to a customer table will show us which customers placed which orders. Joining a product table to a supplier table will show us which suppliers ship which products. It was beautiful.</p>
+  <p>This started to change in the late 90's and early aughts. As demands on servers grew, companies faced a choice - grow up (build a bigger server) or grow out (build more machines). A lot of companies started to build out. SQL databases were really designed to work on a single machine and not optimized for distributed computers. This led to the early work on NoSQL databases.</p>
+  <p>The main difference is a relational database has a schema - essentially a design that says 'this data goes here - that data goes there'. The customer table can't accept product data and vis versa. Depending on the type of NoSQL database, the data is stored in an object. MongoDB for example would store order information within an order object. Rather than having the data distributed multiple tables (customer, product, price, inventory, ect), it's all stored on that order document. This arrangement makes it easier to distributed the objects across multiple nodes.</p>
+  <p>I think I'm going to call it there. I'm really interested in learning more. During the course of writing this post, I've installed MongoDb and am looking forward to playing with it.</p>
+
+  </section>
+</main>
+</html>
+
