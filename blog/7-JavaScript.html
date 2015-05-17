@@ -1,55 +1,36 @@
 <!DOCTYPE html>
+
 <head>
-  <title>Thoughts of Michael K.</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <link rel="shortcut icon" href="../imgs/star.png"
-
-
-
-
+    <title>Thoughts of Michael K.</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <link rel="shortcut icon" href="../imgs/star.png">
 </head>
-<div class="blog_sidebar">
-  <h2>My Posts</h2>
-    <ul>
-       <li><a href="c8-conflict.html">conflict</a></li>
-      <li><a href="t8-tech.html">nosql</a></li>
-      <li><a href="c7-values.html">values</a></li>
-      <li><a href="7-JavaScript.html">objects</a></li>
-      <li><a href="t6-oop-concepts.html">functional vs oop</a></li>
-      <li><a href="c5-feedback.html">pairing</a></li>
-      <li><a href="t5-ruby-classes.html">so say we all</a></li>
-      <li><a href="t4-enumerable-methods.html">.maps and atlases</a></li>
-      <li><a href="c3_thinking-style.html">paying the dues</a></li>
-      <li><a href="t3-arrays-hashes.html">a ray of light</a></li>
-      <li><a href="zig_zag.html">zig zagging toward the light</a></li>
-      <li><a href="c1-chefs-kitchen.html">body-mind</a></li>
-      <li><a href="t1-git-blog.html">ch-ch-ch-changes</a></li>
-      <li><a href="../index.html">main</a></li>
+<div id="sidebar">
+    <h2>Michael Kunc  </h2>
+    <h4>Aspiring Web Developer</h4>
+    <ul id='nav'>
+        <li>
+            <h3>blog posts</h3></li>
+        <li><a href="technical_blog.html">technical</a></li>
+        <li><a href="#">cultural</a></li>
+        <li><a href="#">arsenal</a></li>
+        <li><a href="../index.html">index</a></li>
     </ul>
-
 </div>
-
 <main id='blog_post'>
-  <h1>Hashes vs. Objects</h1>
-  <h3>Wherin I phone it in yet again</h3>
-  <h4>May 3, 2015</h4>
-
-  <section>
-<p>Warning; editorializing follows. Even before I started Dev Bootcamp, I was somewhat aware that JavaScript had a rough reputation. This curriculum this week has reinforced that idea. There were a few snide remarks in the challenges (e.g. "Do you miss Ruby yet?") and the Google+ community page has it's share of people complaining. </p>
-
-<p>I don't think that's productive. At all. And I kinda wish people would stop it. Is there weirdness is JavaScript? Sure. There's weirdness everywhere. I came from a modest Python background, so the multitude of methods in Ruby is absolutely bonkers to me. I find it hard to read.  I spend a lot of time searching for the perfect method because there probably is an exactly perfect method. Python makes way more sense to me. Does that mean Ruby sucks? No. It's just different. </p>
-
-<p>And the other fact of the matter is JavaScript is on practically every computer currently running on the planet.  At this moment, I have six tabs in google chrome open. All of the sites on those tabs use JavaScript. I have no idea which ones use Ruby or Python. Knowing JavaScript makes you useful to every company that publishes a website. Bottom line.</p>
-
-<p>My last gripe about this - it's counterproductive. It's like training a mechanic to hate the catalytic converter because of how it's engineered. You're a mechanic. Sometimes you have to fix catalytic converters. Tell me, does it make you a better mechanic to stand there, hands on hips, and say something like "Catalytic converters suck"? No it doesn't. So my modest plea, quit complaining about JavaScript. Saying something sucks does not make you a better developer. If something sucks, we should be getting in there and fucking fixing it. Sorry for the language, but that's how I feel. Stay positive or GTFO. </p>
-
-<p> So rant aside. The assignment this week is to compare an aspect of Ruby with an aspect of JavaScript. Since I have a natural fondness for data structures, I am going to take a look at Ruby hashes compared with JavaScript objects. This first difference is one of syntax.</p>
-
-<p>JavaScript is quite simple. Apologies for the superheroes again, I went to C2E2 last weekend. </p>
-
-<pre>
+    <h1>Hashes vs. Objects</h1>
+    <h3>Wherin I phone it in yet again</h3>
+    <h4>May 3, 2015</h4>
+    <section>
+        <p>Warning; editorializing follows. Even before I started Dev Bootcamp, I was somewhat aware that JavaScript had a rough reputation. This curriculum this week has reinforced that idea. There were a few snide remarks in the challenges (e.g. "Do you miss Ruby yet?") and the Google+ community page has it's share of people complaining. </p>
+        <p>I don't think that's productive. At all. And I kinda wish people would stop it. Is there weirdness is JavaScript? Sure. There's weirdness everywhere. I came from a modest Python background, so the multitude of methods in Ruby is absolutely bonkers to me. I find it hard to read. I spend a lot of time searching for the perfect method because there probably is an exactly perfect method. Python makes way more sense to me. Does that mean Ruby sucks? No. It's just different. </p>
+        <p>And the other fact of the matter is JavaScript is on practically every computer currently running on the planet. At this moment, I have six tabs in google chrome open. All of the sites on those tabs use JavaScript. I have no idea which ones use Ruby or Python. Knowing JavaScript makes you useful to every company that publishes a website. Bottom line.</p>
+        <p>My last gripe about this - it's counterproductive. It's like training a mechanic to hate the catalytic converter because of how it's engineered. You're a mechanic. Sometimes you have to fix catalytic converters. Tell me, does it make you a better mechanic to stand there, hands on hips, and say something like "Catalytic converters suck"? No it doesn't. So my modest plea, quit complaining about JavaScript. Saying something sucks does not make you a better developer. If something sucks, we should be getting in there and fucking fixing it. Sorry for the language, but that's how I feel. Stay positive or GTFO. </p>
+        <p> So rant aside. The assignment this week is to compare an aspect of Ruby with an aspect of JavaScript. Since I have a natural fondness for data structures, I am going to take a look at Ruby hashes compared with JavaScript objects. This first difference is one of syntax.</p>
+        <p>JavaScript is quite simple. Apologies for the superheroes again, I went to C2E2 last weekend. </p>
+        <pre>
 
 hulk = {
      skin:           "green",
@@ -58,10 +39,8 @@ hulk = {
 }
 
 </pre>
-
-<p> And the three ways I could do this in Ruby. First the hashrocket. </p>
-
-<pre>
+        <p> And the three ways I could do this in Ruby. First the hashrocket. </p>
+        <pre>
 
 hulk = {
       'skin' => 'green',
@@ -70,10 +49,8 @@ hulk = {
 }
 
 </pre>
-
-<p>Using symbols</p>
-
-<pre>
+        <p>Using symbols</p>
+        <pre>
 
 hulk = {
      skin: 'green',
@@ -82,12 +59,9 @@ hulk = {
 }
 
 </pre>
-
-<p>On the surface, it doesn’t look that different. There are a few key differences. In Ruby you have the option to use symbols as keys. The symbol doesn’t really exist in JavaScript. The keys in a JavaScript object are necessarily strings. The second major difference is how Ruby implements classes. JavaScript is not as strongly class based as Ruby. This means that Ruby hashes tie into their parent class. To me, it seems like JavaScript objects are more self-contained. </p>
-
-<p>Good gravy. Another week of phoning in the blog posts.</p>
-
-  </section>
+        <p>On the surface, it doesn’t look that different. There are a few key differences. In Ruby you have the option to use symbols as keys. The symbol doesn’t really exist in JavaScript. The keys in a JavaScript object are necessarily strings. The second major difference is how Ruby implements classes. JavaScript is not as strongly class based as Ruby. This means that Ruby hashes tie into their parent class. To me, it seems like JavaScript objects are more self-contained. </p>
+        <p>Good gravy. Another week of phoning in the blog posts.</p>
+    </section>
 </main>
-</html>
 
+</html>
